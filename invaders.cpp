@@ -126,7 +126,7 @@ public:
             if (position.y == 0)
                 map.setChar(position, ' ');
             map.removeBullet(this);
-            // delete this;
+            delete this;
             return;
         }
         map.setChar(position, ' ');
@@ -261,7 +261,7 @@ bool Invader::moveDown(Map& map) {
         if (position.y == 49)
             map.setChar(position, ' ');
         map.removeInvader(this);
-        // delete this;
+        delete this;
         return true; // Reached the bottom, game over
     }
     map.setChar(position, ' ');
