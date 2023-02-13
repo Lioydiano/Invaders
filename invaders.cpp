@@ -313,14 +313,6 @@ int main() {
         std::future<int> input = std::async(std::launch::async, getch);
         while (input.wait_for(std::chrono::milliseconds(100)) != std::future_status::ready) {
             // Move all invaders down
-            // for (auto it = map.invaders.begin(); it != map.invaders.end(); ++it) {
-            //     if ((*it)->getPosition().y > 19 || (*it)->getPosition().y < 0 || (*it)->getPosition().x > 49 || (*it)->getPosition().x < 0)
-            //         break;
-            //     if ((*it)->moveDown(map)) {
-            //         std::cout << "Game over!\n";
-            //         return 0;
-            //     }
-            // }
             for (Invader* invader : map.invaders) {
                 if (invader->moveDown(map)) {
                     std::cout << "Game over!\n";
@@ -328,11 +320,6 @@ int main() {
                 }
             }
             // Move all bullets up
-            // for (auto it = map.bullets.begin(); it != map.bullets.end(); ++it) {
-            //     if ((*it)->getPosition().y > 19 || (*it)->getPosition().y < 0 || (*it)->getPosition().x > 49 || (*it)->getPosition().x < 0)
-            //         break;
-            //     (*it)->moveUp(map);
-            // }
             for (Bullet* bullet : map.bullets) {
                 bullet->moveUp(map);
             }
