@@ -47,12 +47,11 @@ class Map {
     int width;
     int height;
     Player* player;
-
-public:
-    std::vector<std::vector<char>> map;
     std::vector<Invader*> invaders;
     std::vector<Bullet*> bullets;
+    std::vector<std::vector<char>> map;
 
+public:
     Map() : map(10, std::vector<char>(10, ' ')), invaders(), player(nullptr) {}
     Map(const Map& other) : map(other.map), invaders(other.invaders), player(other.player) {}
     Map(int width_, int height_) : width(width_), height(height_), map(height_, std::vector<char>(width_, ' ')), invaders(), player(nullptr) {}
@@ -76,6 +75,9 @@ public:
     void setChar(int, int, char);
     char getChar(const Coordinate& position) const;
     void print() const;
+
+    void moveInvaders();
+    void moveBullets();
 };
 
 
@@ -302,6 +304,19 @@ Map::~Map() {
     }
     delete player;
 }
+void Map::moveBullets() { // Move all bullets up
+    for (Bullet* bullet : bullets) {
+        bullet->moveUp(*this);
+    }
+}
+void Map::moveInvaders() { // Move all invaders down
+    for (Invader* invader : invaders) {
+        if (invader->moveDown(*this)) {
+            std::cout << "Game over!\n";
+            exit(0);
+        }
+    }
+}
 
 
 int main() {
@@ -320,17 +335,8 @@ int main() {
     while (true) {
         std::future<int> input = std::async(std::launch::async, getch);
         while (input.wait_for(std::chrono::milliseconds(100)) != std::future_status::ready) {
-            // Move all invaders down
-            for (Invader* invader : map.invaders) {
-                if (invader->moveDown(map)) {
-                    std::cout << "Game over!\n";
-                    return 0;
-                }
-            }
-            // Move all bullets up
-            for (Bullet* bullet : map.bullets) {
-                bullet->moveUp(map);
-            }
+            map.moveInvaders();
+            map.moveBullets();
             if (rand() % 15 == 0) {
                 int x = rand() % 50;
                 if (map.getChar(Coordinate(0, x)) == ' ') {
