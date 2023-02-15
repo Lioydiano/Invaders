@@ -44,19 +44,22 @@ class Player;
 
 
 class Map {
-public:
     int width;
     int height;
+    Player* player;
+
+public:
     std::vector<std::vector<char>> map;
     std::vector<Invader*> invaders;
     std::vector<Bullet*> bullets;
-    Player* player;
 
     Map() : map(10, std::vector<char>(10, ' ')), invaders(), player(nullptr) {}
     Map(const Map& other) : map(other.map), invaders(other.invaders), player(other.player) {}
     Map(int width_, int height_) : width(width_), height(height_), map(height_, std::vector<char>(width_, ' ')), invaders(), player(nullptr) {}
     ~Map();
 
+    Player* getPlayer() const;
+    void setPlayer(Player*);
     void addInvader(const Coordinate&);
     void addInvader(Invader*);
     void addBullet(const Coordinate&);
@@ -168,7 +171,12 @@ public:
     }
 };
 
-
+Player* Map::getPlayer() const {
+    return player;
+}
+void Map::setPlayer(Player* player_) {
+    player = player_;
+}
 void Map::addInvader(const Coordinate& position) {
     invaders.push_back(new Invader(position));
     map[position.y][position.x] = 'V';
