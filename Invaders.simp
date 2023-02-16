@@ -1,0 +1,1751 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.95" multi-file="no" uid="simpafdb58b072ff4cda8006239a92bf21dc">
+  <meta>
+    <name>Invaders</name>
+    <authors>Mattia Marchese</authors>
+    <description />
+  </meta>
+  <counters models="2">
+    <entity-names />
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-2cf2321743874692835d95d1859a1973" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name>Mattia</first-name>
+        <last-name>Marchese</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-d077348690c9489a888b08d9731f0b8a" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="Class:3f2ab89dca76431f9907fd925f36f0d8" name="Player" class-ref="3f2ab89dca76431f9907fd925f36f0d8" />
+        <type id="Cpp.int" tid="s-integer32" name="int">
+          <parameter ref="c0af662d372f4009a8f2397fe47c8468" value="" />
+          <parameter ref="c1951d5c56ec4581bab0e6959a0050c0" value="" />
+        </type>
+        <type id="std::string" name="std::string" />
+        <type id="Cpp.char" tid="char" name="char">
+          <parameter ref="c0af662d372f4009a8f2397fe47c8468" value="" />
+          <parameter ref="c1951d5c56ec4581bab0e6959a0050c0" value="" />
+        </type>
+        <type id="Class:48468b35ab8645ccab6f0acf60942398" name="Invader" class-ref="48468b35ab8645ccab6f0acf60942398" />
+        <type id="Cpp.bool" tid="boolean" name="bool">
+          <parameter ref="c0af662d372f4009a8f2397fe47c8468" value="" />
+          <parameter ref="c1951d5c56ec4581bab0e6959a0050c0" value="" />
+        </type>
+        <type id="Class:2e7da9ab30c144f5868e909216495302" name="Coordinate" class-ref="2e7da9ab30c144f5868e909216495302" />
+        <type id="std::vector" name="std::vector" />
+        <type id="Class:a8a243f856ab4a859bc3ed866ca18cf8" name="Bullet" class-ref="a8a243f856ab4a859bc3ed866ca18cf8" />
+      </types>
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>Mattia Marchese</author>
+        </authors>
+        <description />
+        <creation-date>02/16/2023 15:08:02</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="517b93c692a14cf297c84b5986df1b19" cid="PKG001" type="package" creator="" creation-date="02/16/2023 15:08:41">
+          <tagged-values>
+            <tagged-value id="tvc50087540d0d4b3da62f9d15d1257837" name="namespace" type="text" multiple="false" hidden="false" value="" />
+            <tagged-value id="tv09065301f8fb41689462506f09d6cb16" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+        </item>
+      </abstract-items>
+      <sub-models>
+        <model id="p5bbf4a14a9a646fda46b812f41b54447_685764945" name="" namespace="" order-index="2">
+          <meta>
+            <authors>
+              <author>Mattia Marchese</author>
+            </authors>
+            <description />
+            <creation-date>02/16/2023 15:08:41</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <tagged-values>
+            <tagged-value id="tv167a16a985424424b09c0b3411854d62" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+          <abstract-items>
+            <item id="e33be5cdc2b640aca163085e8f71922e" cid="PROP002" type="property" name="x" owner="2e7da9ab30c144f5868e909216495302" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv34f13046dbc644c39d289c979bb0ae4d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="x" />
+                <tagged-value id="tvf50b80be70ea44f8983d4c72c4cf29bc" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv66430114519a4af2895a78b8ce1240d2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv6699ff9261e14a4f86a2342289ab201e" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvcf4f840e41464d12bb8fdc3d822b0454" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="994" />
+                <tagged-value id="tv21f731df98df4653972a013b818ebe8d" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="6" />
+                <tagged-value id="tv8940a23d39c04d21b8ae42d8e475a593" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tvc3fa6e8dad744a0a8e91912ffffbf669" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="int" type-id="Cpp.int" />
+            </item>
+            <item id="debdb196d13e4646af0007357fed6cb6" cid="DEP002" type="dependency" creation-date="02/16/2023 15:08:41" from="48468b35ab8645ccab6f0acf60942398" to="2e7da9ab30c144f5868e909216495302" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv96032237f3e24045929bfaf53dbf8755" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="6a62a25a5d934714aabedd9868c76e72" cid="REL001" type="relationship" creation-date="02/16/2023 15:08:41" from="9b8da454ace44ac58830f29f85a7a01e" to="2e7da9ab30c144f5868e909216495302" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv5af3cdc917074080a08a382e8b5419b5" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="9b8da454ace44ac58830f29f85a7a01e" to="2e7da9ab30c144f5868e909216495302" derived="false">
+                <start-role id="umlar-3cc2b0fe-663e-4cf9-b001-9e199c7c2b98" name="" navigability="" association-type="aggregation" visibility="private" />
+                <end-role id="umlar-f2bdb3ca-feb2-4470-b3d3-0799896b9150" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="6c6c82c338944db89aa37006d62f4019" cid="PROP011" type="property" name="symbol" owner="9b8da454ace44ac58830f29f85a7a01e" creation-date="02/16/2023 15:08:41" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tv16c9bb0d7a1a43a392ac64ed5a9ea149" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="symbol" />
+                <tagged-value id="tv9e72807a46b0405d97db72d5b8e4a016" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv5474dbb82876473f8d0e9a08756c7764" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv80c11ace236c404f81ac959d50d0db4c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv6286cbb2a55e4851badeeb63b7706233" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2495" />
+                <tagged-value id="tvf23a47d1f4874279ada2a93a7f963438" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="12" />
+                <tagged-value id="tv2c374ef44b624eb39da720e083a8e0fe" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tvcb81b7b5009a41c1bd572bb67fcae871" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="char" type-id="Cpp.char" />
+            </item>
+            <item id="6e62c825667041b78e7b3c48835607f9" cid="DEP003" type="dependency" creation-date="02/16/2023 15:08:41" from="48468b35ab8645ccab6f0acf60942398" to="406168f848ff448aaa12f81f29008cab" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv68e8d5f11fee44d79546622ede2de2d5" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="cf49a4a6bb3f4d0dac09b66c3f78420f" cid="PROP003" type="property" name="width" owner="406168f848ff448aaa12f81f29008cab" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvd7b267e9194a446a9a40ef4a6bcbcfc1" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="width" />
+                <tagged-value id="tvd0396c132a4d4d758dbbfa05b815c2c6" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv3168626be8594557a3c1207467173738" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv628ca9b50016481bbd04e7908dfea5a2" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv446a261168ef4b6d8bfb9fec3622439f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1126" />
+                <tagged-value id="tv76ea0090b4a84151ae690625bfa28738" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="10" />
+                <tagged-value id="tvce4a046cc4384b5ebae61468dd422108" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tva70b8e520f9b43e98b125e536ac63d59" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="int" type-id="Cpp.int" />
+            </item>
+            <item id="031c5affb0c04b78bee45766701681f4" cid="DEP006" type="dependency" creation-date="02/16/2023 15:08:41" from="3f2ab89dca76431f9907fd925f36f0d8" to="2e7da9ab30c144f5868e909216495302" visibility="package">
+              <tagged-values>
+                <tagged-value id="tvc552ff8d00d144c2b7c90b7b52afdc10" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="3f2ab89dca76431f9907fd925f36f0d8" cid="C006" type="class" name="Player" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv1f4af13976294145b6fbe9ca126811b0" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvacd2f1cd225f458e8312e6a2b7119c31" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Player" />
+                <tagged-value id="tv03fe49eaf49c438286f195d02bddcebf" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tva629afdf69dd48f0b6e591010aa96366" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv7449bfd8d23046f79c448337ecb275eb" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv0aa4455ceab44a1cbe16827b937f07ee" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4426" />
+                <tagged-value id="tvbaa585d8cf6c4b2cbfb7f46f72e2ed4c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="609" />
+                <tagged-value id="tv04c22994a96a47f0a45c0e272079110b" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv2816bb8452c545189abc2cc37d3b0188" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <operations>
+                <operation id="o67a4a3dac7844f5aaf409fe12cbf07df561" cid="OP052" name="Player" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pdfcf4d3fc0b04023bfa844c936309533" name="position_" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tve10341fd5fa540b1a840ca65ba8eeb0b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Player" />
+                    <tagged-value id="tvdbdc52f4348f4dabb01465f6f9f19ed4" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvf47a20b69f92448caa03f7dff340a0f8" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv6f5270dc151b4b90ba6901c4337550ea" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4501" />
+                    <tagged-value id="tv1066cb64d726429c9fed5c0b91566f7f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="74" />
+                  </tagged-values>
+                </operation>
+                <operation id="o94827b4f74be4c718a5bd4bc39f620b4561" cid="OP053" name="Player" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p5be14ed2b4d843b3bfb1906fdab2e224" name="other" type="Player" type-id="Player" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvf649d218ffe94d5c8804a02c9ea5dfc7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Player" />
+                    <tagged-value id="tv338ac2bd7f6f495cb296e158753abcb0" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv3c9dd01ef294461a971b3c26345021f5" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv16a85273034d4303a220b213322d47e5" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4581" />
+                    <tagged-value id="tv425f67631b74400ca63af9b44de7edf4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="47" />
+                  </tagged-values>
+                </operation>
+                <operation id="odef3686e68d34fd88f9ec18cd68de6c4561" cid="OP054" name="Player" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvadf7b418ebaf4573bc8e29151a454bcf" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Player" />
+                    <tagged-value id="tv934c2e3e7eb74414bfccfd486f55f449" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvdf9f3ea4cc28498982a834b66658c67d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvdf560cc2e02546e886ae6836572018c1" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4634" />
+                    <tagged-value id="tv2e69e60f706b4c80b92604517b8a4344" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="12" />
+                  </tagged-values>
+                </operation>
+                <operation id="off5109600b6b4b958b1f124baff7e3e7561" cid="OP055" name="moveLeft" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p5ac50aae9f164c74ab2b73d66d46703a" name="map" type="Map" type-id="Map" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvb2478cc4fbae41f7b94afb11d46279e5" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="moveLeft" />
+                    <tagged-value id="tv52da849c82da452aa765915abbebac2b" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv0bce4b0c51704456a53830ad5ab64430" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvbf4ac9066b504bf184c86e09be5c004d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4654" />
+                    <tagged-value id="tvbd91a88539704b58877b4728b3021e8a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="135" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        map.setChar(position, ' ');
+        position.x -= 1;
+        map.setChar(position, symbol);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o6307f23916104ba7bf43b7b82e1d438d561" cid="OP056" name="moveRight" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pd602199a2b194d47b871763ee364ab7d" name="map" type="Map" type-id="Map" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv1447dc85a62f47d6b531d5374fa46b20" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="moveRight" />
+                    <tagged-value id="tve0c5d16af6b1499b983174df66552bc8" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv98fc5d1ec887418c942ef889116b00e2" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv08667c6320964745a16da6a5ba2394de" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4795" />
+                    <tagged-value id="tvaef84fc18900433eb55341678d45c76f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="136" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        map.setChar(position, ' ');
+        position.x += 1;
+        map.setChar(position, symbol);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o41cecc1619f346fc94c4446973a18951561" cid="OP057" name="fire" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pc1fef88582b84c1cacddd93eea7fdcfd" name="map" type="Map" type-id="Map" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv6dcc33a993dc4d6da7e93bb1ff5560b4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="fire" />
+                    <tagged-value id="tv6007bc81ec9f43a29865ce6d4bf42889" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv10c0dbc7b6e04452911f6522c2c64d43" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv6380e678ac49422db669ec5130dd7fe2" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="4937" />
+                    <tagged-value id="tv814e4dd0f5a54ee19f51418547d8247f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="94" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        map.addBullet(new Bullet(position + Coordinate(-1, 0)));
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="9ce3e80a54474891bca275f93ffea70b" cid="DEP007" type="dependency" creation-date="02/16/2023 15:08:41" from="3f2ab89dca76431f9907fd925f36f0d8" to="406168f848ff448aaa12f81f29008cab" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv6e170e954ca64d3c8fda986e150a3cb8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="48468b35ab8645ccab6f0acf60942398" cid="C004" type="class" name="Invader" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvc50ad801d4584578a9916c2071b24a7f" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv0bb451af581a4efcb15223b406622b8d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Invader" />
+                <tagged-value id="tv2517e9c712bf44d1a410735fe5e97aed" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv00f55df713f8437581368b4013890d7a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tve481eb1cb45643e0a5fb8a4b8cdb05dd" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv17cab7cf286247a99f12a8b898bf7a15" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3139" />
+                <tagged-value id="tv0a181bfe2186444a98a95991318d5527" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="259" />
+                <tagged-value id="tv55c32e7e30b34ca99981930954c54a99" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv367bc69e584e40db9cc18d90e32baf17" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <operations>
+                <operation id="oae4416bae8ec4b858ec2bbf520062e36524" cid="OP042" name="Invader" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p1c3fbb15f95648868919344ca52a294f" name="position_" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvf5eb178864304a989164f12224b8a953" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Invader" />
+                    <tagged-value id="tv502875bb4ea2449b885f8d580da0aba5" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv0ca878f2dc884099a2840797827958c0" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7e3cbe83af27455b8ce23c12eb514e0d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3216" />
+                    <tagged-value id="tv4a63600752ad45e58f743a0a7610f524" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="76" />
+                  </tagged-values>
+                </operation>
+                <operation id="ob867ad0c09054e7bbf8c9516506389b6524" cid="OP043" name="Invader" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p7e699283aeb74733ae68355ccc58e58d" name="other" type="Invader" type-id="Invader" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv20f71e5146f74579956fed142f2ff464" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Invader" />
+                    <tagged-value id="tv610a177a51bc4eca916de0d9c3a09bad" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvf0a615228d3046d1a0c46d8f2902f29a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tve5b36b0065cb4fa7bb2340d672da9ee4" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3298" />
+                    <tagged-value id="tv0fc827c5967c4bb390b2df6f63166d50" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="49" />
+                  </tagged-values>
+                </operation>
+                <operation id="oed9806d11dc04d87a20887323be4ee40524" cid="OP044" name="Invader" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvfde6c00a24164f4ea803fe3a6ed3720a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Invader" />
+                    <tagged-value id="tv8820ea10093a49feb6a53c9b103f5ce6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv291756fa495d4659b850daaa8a980b21" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv459560d12bc54bc794d5d1ad47e218a0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3353" />
+                    <tagged-value id="tv24ec906f88494699b2d84470ed9ec0f6" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="13" />
+                  </tagged-values>
+                </operation>
+                <operation id="o10108ee960df4c8187ab5fa1ffa49558567" cid="OP076" name="moveDown" creation-date="02/16/2023 15:08:41" type="bool" type-id="Cpp.bool" visibility="public">
+                  <parameters>
+                    <parameter id="pf30cf330bfa64ae89fed45b88914b9b9" name="map" type="Map" type-id="Map" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv912bf15c0610426fab486e7262156003" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="moveDown" />
+                    <tagged-value id="tv3e3303de6c984af5a276bffcd39003c2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv01a151f9114a44e2b1b736f3ae267054" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvcf32107a0c5c48099d2b1b090f08399a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="8111" />
+                    <tagged-value id="tv871bc1e2ae6f4326ae24406098d8709a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="985" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    if (position.y &gt;= 49) {
+        if (position.y == 49)
+            map.setChar(position, ' ');
+        map.removeInvader(this);
+        delete this;
+        return true;                                 
+    }
+    map.setChar(position, ' ');
+    Coordinate destination_ = position + Coordinate(1, 0);
+    char destination = map.getChar(destination_);
+    position.y += 1;
+    if (destination == ' ') {
+        map.setChar(position, symbol);
+    } else if (destination == '$') {
+        map.setChar(position, '@');
+        return true;                  
+    } else if (destination == '^') {
+        map.setChar(position, ' ');                       
+        map.removeInvader(this);
+        delete map.removeBullet(position);
+        delete this;
+    } else if (destination == '#') {
+        map.setChar(position, ' ');                      
+        map.removeInvader(this);
+        delete this;
+    }
+    return false;
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="9e5f7eff07a449a28f1e020a811e65a9" cid="REL005" type="relationship" creation-date="02/16/2023 15:08:41" from="406168f848ff448aaa12f81f29008cab" to="a8a243f856ab4a859bc3ed866ca18cf8" visibility="package">
+              <tagged-values>
+                <tagged-value id="tvf457734d22624e038394fd1127d31e38" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="406168f848ff448aaa12f81f29008cab" to="a8a243f856ab4a859bc3ed866ca18cf8" derived="false">
+                <start-role id="umlar-bee29cd7-a729-49cd-8a7c-4b9d6db6f840" name="" navigability="" association-type="aggregation" visibility="private" />
+                <end-role id="umlar-d163c83a-7626-4564-8517-7cc8415895f5" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="9b8da454ace44ac58830f29f85a7a01e" cid="C003" type="class" name="Element" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tve399c6b5ed274ef7b0b5b91d28c3822d" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv4f8066603b454f09af2c8fb295252bac" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Element" />
+                <tagged-value id="tv76679a87003f4809825fd48351be8f51" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tvf9e1c1496f4548aa806548b58f92ee60" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv7d42cc9fe7fd41849ad7cb798b73fc03" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv5c235c83be1f43a7b1700c21c5412f54" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2413" />
+                <tagged-value id="tv0f8b211f9d0b4337836c001d4387ae3c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="720" />
+                <tagged-value id="tv82092d47f0274f43bc082ad3d80d6b40" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv96039ed25f2e441c8c8c6eaddb364968" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="ae2eca69cfb28465b92440dff70038245516" cid="PROP009" name="position" creation-date="02/16/2023 15:08:41" property-ref="c3a369c9a3b34f35b327d8f79c42c429" />
+                <attribute id="af7635dd58f0244c599862570bb96c454516" cid="PROP010" name="type" creation-date="02/16/2023 15:08:41" property-ref="9113dc18ba4c4cf1b66b9bafbfa7f7ef" />
+                <attribute id="ad24017130c794e54bd33e294cadacb5a516" cid="PROP011" name="symbol" creation-date="02/16/2023 15:08:41" property-ref="6c6c82c338944db89aa37006d62f4019" />
+              </attributes>
+              <operations>
+                <operation id="o840576b464cd45a2b08258b2cee6c0f4516" cid="OP034" name="Element" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pa831513e7b674cb883e4e1365188f9b0" name="position_" type="Coordinate" type-id="Coordinate" />
+                    <parameter id="p96dedf28723747e4a34d2bdb18c66d41" name="type_" type="std::string" type-id="std::string" />
+                    <parameter id="p07f36da585d748ab821aea74e93f8793" name="symbol_" type="char" type-id="Cpp.char" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tva349df3f73b74d9a9388e9688b7bc287" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Element" />
+                    <tagged-value id="tvfb4dafd8732c4acebe57b6cd3c96ac0f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv4e7b62b2de644ec5bc972f8bdb9c6fa6" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvfd4e90f3a6c54270ba3278d29920f550" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2585" />
+                    <tagged-value id="tv83a11b426d3244eabe8f2c8cb48ea62b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="131" />
+                  </tagged-values>
+                </operation>
+                <operation id="o3680af29e9f84cf3a43b95019e73886e516" cid="OP035" name="Element" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p36699b29bcca432381b03820134f4e64" name="other" type="Element" type-id="Element" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv001db0f3883947939e394631ba777b4a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Element" />
+                    <tagged-value id="tvd8d612cf9ed2407db5c8063203a11c22" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv5bc38fa154ce4a6c82c885109f5e6519" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvfa30175d8477451096e4771bdc7f40b0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2722" />
+                    <tagged-value id="tv18e382d46a04491f8503e4509362d0c6" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="99" />
+                  </tagged-values>
+                </operation>
+                <operation id="o1ec229c741cb4038933708906f4e9322516" cid="OP036" name="Element" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv994a44eb59bc471bacf4272273b14fcb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Element" />
+                    <tagged-value id="tv867f5bf023db4dd8ae704b713169f22b" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tve43148b17c674ee08a08d8b49755c050" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv49cc1c2ec7304bc99330c077b98913b7" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2827" />
+                    <tagged-value id="tvece8c0000e7543a48899b9e430800e3e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="13" />
+                  </tagged-values>
+                </operation>
+                <operation id="oa649ab78997142659c85d9d54f545a67516" cid="OP037" name="getPosition" creation-date="02/16/2023 15:08:41" type="Coordinate" type-id="Class:2e7da9ab30c144f5868e909216495302" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv6739ae6eb4504a8cae9bb0a3135596e0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getPosition" />
+                    <tagged-value id="tv2c19fdf35f43475fa78addb0c3b55f00" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvc3ab5ae9c50e4f51b6cf331ad214b06c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv3a01525f97d54ad8a9b87b521875c259" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2848" />
+                    <tagged-value id="tva274703674ae4f4f81d3dd602355c7e4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="65" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        return position;
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o7dd08f072e784f19afa9cdfc9171f208516" cid="OP038" name="setPosition" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p4c5b110b132b4ac2ab98a4241eff5a81" name="position_" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv9cb8f0e3b1c144ed9a4916c48e88c69a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setPosition" />
+                    <tagged-value id="tvdee006bfe107491989e397f83ba4c567" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv809d6d40789a4aad915ee8f3ecc3db6c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7fd2f9bc3de240e28d1f6201b09cc59d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2919" />
+                    <tagged-value id="tv30eaa4f11c81409299080cf6e7dac558" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="85" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        position = position_;
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o39f730fab2e640808f66e3c163ead88d516" cid="OP039" name="getType" creation-date="02/16/2023 15:08:41" type="std::string" type-id="std::string" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv31123e880b974964a5e31d6c51acf583" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getType" />
+                    <tagged-value id="tvb792edd86c6b4cffa10b20ee5707ae65" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv330b57c59d10406fb843c58ffe32113f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv64535e9440ce4a139dda2b4b8bf3956b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3010" />
+                    <tagged-value id="tv35aa2c4b5dc64829850a7451aaff9fc2" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="58" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        return type;
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oa3232bec91854c91be5d971033b5fdce516" cid="OP040" name="getSymbol" creation-date="02/16/2023 15:08:41" type="char" type-id="Cpp.char" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv9cc99792921d4ac2a15f0dc0e45c39c8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getSymbol" />
+                    <tagged-value id="tvd0d55237ccfa4c0bbf8b0544c3ea431d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvf82d853299924572958b79ad8bfc8279" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvb195899764004b84aadb15da4376aec4" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3074" />
+                    <tagged-value id="tv9127d6ffdb4f4ad0957b6718d54f1eb7" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="55" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        return symbol;
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="d4edd133c2004d7282abbab16855ad87" cid="REL004" type="relationship" creation-date="02/16/2023 15:08:41" from="406168f848ff448aaa12f81f29008cab" to="48468b35ab8645ccab6f0acf60942398" visibility="package">
+              <tagged-values>
+                <tagged-value id="tvca724d1a46ce418994e4ad8258615139" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="406168f848ff448aaa12f81f29008cab" to="48468b35ab8645ccab6f0acf60942398" derived="false">
+                <start-role id="umlar-abcec199-a415-46dc-aa58-2746465188a4" name="" navigability="" association-type="aggregation" visibility="private" />
+                <end-role id="umlar-c6119b57-f3f9-4651-974d-3a7b8a878bc1" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="9c4bc158dbef4a4483bb9221d3dc2fe6" cid="PROP007" type="property" name="bullets" owner="406168f848ff448aaa12f81f29008cab" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tva8ae4f767a35428b883e5cf19576675f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="bullets" />
+                <tagged-value id="tvbf44b58dfbaf4a3bba19569bc1a0c73f" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tvfe39d2c31d2c4cf2a1c7509a9ba73672" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tvc359ef82cc7e4648b38b7d162fdf76e8" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvc52ea7b4dde34a7daeb09b064bcf0bbd" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1217" />
+                <tagged-value id="tv7a68b33e63f940e689bd63353e4fab5b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="29" />
+                <tagged-value id="tv726fe00d76334bd89ea334b6a9fd5e59" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tvdaab097ab2a24258bdfd44e562adc6c8" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="std::vector" type-id="std::vector" />
+            </item>
+            <item id="63bea06b02214b62b08edd2f7e5b674c" cid="PROP001" type="property" name="y" owner="2e7da9ab30c144f5868e909216495302" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv0b80092ff1a84de6aea0845f5302bb85" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="y" />
+                <tagged-value id="tv5add334594b74e4aa67d5ecd1475ed5a" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv3061eb22f5ff424780dae794a8f5288c" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv1e95270360df4ab0bcb9827f5a21088f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv196efd90248e49d9b2de4f3861e7b908" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="982" />
+                <tagged-value id="tv51fcc18f12c543f38c208a74e8c24adc" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="6" />
+                <tagged-value id="tvde65d718badf49a7877183790d058816" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tvaaad69259b4d482097bf40234d6c36a9" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="int" type-id="Cpp.int" />
+            </item>
+            <item id="9113dc18ba4c4cf1b66b9bafbfa7f7ef" cid="PROP010" type="property" name="type" owner="9b8da454ace44ac58830f29f85a7a01e" creation-date="02/16/2023 15:08:41" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tv8072b20b2ba9420198116d80af9b132e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="type" />
+                <tagged-value id="tvc3e339746e634b77b38b476af933c0e6" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv5c10e96795b04e4c8426e31577efae22" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv56a90b94a6034a83a7fb29b1ee9ff883" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv6bb91804f4bd45da88d249665e1c7e12" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2472" />
+                <tagged-value id="tva415d85a791c4c5a9a8066ad6557e64f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="17" />
+                <tagged-value id="tv3afb29d7ac304ace9f8b5d4f4b02112c" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tvcad8048464884199bfe1f1cf48866758" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="std::string" type-id="std::string" />
+            </item>
+            <item id="d7e15aa8b84a437f827f24a63f97e5b5" cid="PROP005" type="property" name="player" owner="406168f848ff448aaa12f81f29008cab" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv433cf708d9f74fba86b731cf38770523" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="player" />
+                <tagged-value id="tvf6f1eea54ff840f186d0cbbb7d6763ca" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tvbb90fe5363914e44a02c77b778777cbf" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv906a3ac6c04d4ad197f60a015b87ac7f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvdae47368472840b0a7b521297008dd00" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1159" />
+                <tagged-value id="tv22e1454b80364d95acf8a98f7b68c6d6" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="15" />
+                <tagged-value id="tv12f5cb1b05f0435d991a9085c3c1da99" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tve0658b3d05224ab5a56d32e3bf213e26" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="Player" type-id="Class:3f2ab89dca76431f9907fd925f36f0d8" />
+            </item>
+            <item id="f947fd46953f465f93a01246e8d5d3c6" cid="GNR001" type="generalization" creation-date="02/16/2023 15:08:41" from="48468b35ab8645ccab6f0acf60942398" to="9b8da454ace44ac58830f29f85a7a01e" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvce0e944391a84e69b2ac2573f5ba5fb7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="40e87b8f9f92411abb8e2f3b5c9fecf1" cid="PROP004" type="property" name="height" owner="406168f848ff448aaa12f81f29008cab" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvd8bfc06c16ff435a8068ec17bea17a7f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="height" />
+                <tagged-value id="tvacab140b991542dca1d5f22733caef0c" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv5818422de214432ea3d2d224ed45ca23" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv57ca6d51af354d93a6bb1e7620604d51" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvfe2030c61ebe4f62a909230d046cdeff" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1142" />
+                <tagged-value id="tv46dfa3dc194347bc9c153a76146a1713" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="11" />
+                <tagged-value id="tv6f3711a52c1d4f599b01f151fa457449" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv89e297c6995048a7b5a22890aff93406" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="int" type-id="Cpp.int" />
+            </item>
+            <item id="33610c6af522481b8b70cd4bcdaa10eb" cid="DEP001" type="dependency" creation-date="02/16/2023 15:08:41" from="406168f848ff448aaa12f81f29008cab" to="2e7da9ab30c144f5868e909216495302" visibility="package">
+              <tagged-values>
+                <tagged-value id="tve9e7fa009ea4470081981f655928cf74" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="68543a808528435094af1d8f9730deb7" cid="C007" type="class" name="Main" creation-date="02/16/2023 15:08:41">
+              <stereotypes>
+                <stereotype name="main" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="68543a808528435094af1d8f9730deb7_main_c" type="main" ref="" />
+              </stereotype-instances>
+              <operations>
+                <operation id="ob4c4ec1e73b74c8da8439d7a96b99e89567" cid="OP079" name="main" creation-date="02/16/2023 15:08:41" type="int" type-id="Cpp.int" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv6aeece34065c443c952dc2df36930dd3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="main" />
+                    <tagged-value id="tva4a154d00e2741eea3f6a379b89d6a8f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvc5be5f4672d4474fbaa3418d52a99ac7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv39872324b2454b5cbe6c960496b858b8" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="9633" />
+                    <tagged-value id="tvf31797f39782491fa6b63375715782b8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1248" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    srand(time(NULL));
+    std::ios_base::sync_with_stdio(false);
+    std::vector&lt;char&gt; houses(50, '#');
+    int houseCount = 50;
+    Map map(50, 20);
+    map.setLine(Coordinate(18, 0), houses);
+    Player* player = new Player(Coordinate(19, 25));
+    map.addPlayer(player);
+    map.setChar(player-&gt;getPosition(), '$');
+    map.addBullet(new Bullet(Coordinate(5, 25)));
+    std::cout &lt;&lt; "\x1b[2J\x1b[3J\x1b[H\x1b[?25l";
+
+    while (true) {
+        std::future&lt;int&gt; input = std::async(std::launch::async, getch);
+        while (input.wait_for(std::chrono::milliseconds(100)) != std::future_status::ready) {
+            map.moveInvaders();
+            map.moveBullets();
+            if (rand() % 15 == 0) {
+                int x = rand() % 50;
+                if (map.getChar(Coordinate(0, x)) == ' ') {
+                    map.addInvader(new Invader(Coordinate(0, x)));
+                }
+            }
+            map.print();
+        }
+        char c = input.get();
+        if (c == 'a')
+            player-&gt;moveLeft(map);
+        else if (c == 'd')
+            player-&gt;moveRight(map);
+        else if (c == 'f')
+            player-&gt;fire(map);
+        else if (c == 'q')
+            exit(0);
+    }
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="9970a008d1f946609daed3f786f34a42" cid="DEP005" type="dependency" creation-date="02/16/2023 15:08:41" from="a8a243f856ab4a859bc3ed866ca18cf8" to="406168f848ff448aaa12f81f29008cab" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv2a0c045d266a4ba9810327369d9f5b48" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="0f15d0816d9442759e9da96bc69dab4a" cid="GNR002" type="generalization" creation-date="02/16/2023 15:08:41" from="a8a243f856ab4a859bc3ed866ca18cf8" to="9b8da454ace44ac58830f29f85a7a01e" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv187b50902e404098883f6464c82c2788" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="9929ba0a295d49e3b20fca76ae374f2d" cid="PROP008" type="property" name="map" owner="406168f848ff448aaa12f81f29008cab" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv9cc379e772484af7a55a147970791756" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="map" />
+                <tagged-value id="tv3dda3187e3ee45f1bdb987ece23b3f05" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv1647fd395ab34ba8a12588f6984f02dc" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv7e6694d2c2be445ba5b017ba67f73379" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv19a8ab3607d04e378db68d49a3feaa78" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1252" />
+                <tagged-value id="tv3d976997f3b646acbd35c13f49b7c503" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="35" />
+                <tagged-value id="tv4c35912a345e4f749e3a122667e27880" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv30fc9d0c4e91471ea178d9c04058b5a1" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="std::vector" type-id="std::vector" />
+            </item>
+            <item id="a8a243f856ab4a859bc3ed866ca18cf8" cid="C005" type="class" name="Bullet" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv609d44ba56d1417f86ad37c89059466c" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv776a0bd30c824c0194a95a7c948f14dc" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Bullet" />
+                <tagged-value id="tv930dc0bd29204be18027e4fb8fc90685" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tvf4f6075e704a4384945021cfc24db727" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv160c2098cf614259b7829aa28b2682d3" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv3db096e6511c413db56ea69dc031127b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3404" />
+                <tagged-value id="tv93c17868f4fb4ddaab0a6858238a0c00" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1016" />
+                <tagged-value id="tv9c8cc21ba5e049f994c609c7ff824a81" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv2b63db0331414f7a96c3d1285c4827b7" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <operations>
+                <operation id="o1c84b1a887bd42aaacd0d1e6cc0b6889524" cid="OP047" name="Bullet" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p8e54ae2c9633434a911220dd977055a0" name="position_" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvd4d97c2a8ecb438bbb98727bf43504df" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Bullet" />
+                    <tagged-value id="tv8ae72f8ea0c94fed8641a6421e17aa8a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvbd1a73cdd19d411c9b3afa767792a3a1" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvbe4470dc69c64c79813e0b3460bb0929" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3479" />
+                    <tagged-value id="tvca82d14839454f419fe785af9d543884" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="74" />
+                  </tagged-values>
+                </operation>
+                <operation id="oa353e2eee6f041dda2894714d83a4213524" cid="OP048" name="Bullet" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p7b5633bb72ad4d03a211b93c66b378d0" name="other" type="Bullet" type-id="Bullet" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv2f1b08d8b6c14adc84baddba61c2f773" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Bullet" />
+                    <tagged-value id="tv65315bbd80924e6bb4fd74d5f2b9b92a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvf0a2f1746bc6442583f770ec284eab8b" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv64a881859e844228b414701a1a859b16" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3559" />
+                    <tagged-value id="tv9acdf44a14fb4633b95d52667531596a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="47" />
+                  </tagged-values>
+                </operation>
+                <operation id="o5cab9eb6066f4d8a86e41010cdbedda1524" cid="OP049" name="Bullet" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv809c4e60ade2400ea9deb2179e0f9507" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Bullet" />
+                    <tagged-value id="tve56d270ad7a841d2b59f6ad051858b15" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv90192cc671cc4729ab6330830f2871ab" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tve46dbb929ac74c81bb20005095286988" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3612" />
+                    <tagged-value id="tvc4202e68cac540c4928837525c3d20fd" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="12" />
+                  </tagged-values>
+                </operation>
+                <operation id="oc06b3b4c75ee47fd9b9f4319088d2d01524" cid="OP050" name="moveUp" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pcc8edceb11a9406ab41c607955333e6c" name="map" type="Map" type-id="Map" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvc3b1d0d5c6f94b719832bebbe56e9c53" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="moveUp" />
+                    <tagged-value id="tv4e22f905cc63466da9bedcd2ad0d50f5" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvf6cb0d7565f9498ebbc033eb2f0fdf5c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv6fc76807b20d4abfb9d0c1f221896002" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="3632" />
+                    <tagged-value id="tv6d5588f9963e43bbaf8b72fcd5e22577" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="784" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="2011599b99b54ed9ad8722213bbbe22b">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> Invader is destroyed
+</t>
+                            </p>
+                          </paragraph>
+                          <paragraph>
+                            <style />
+                            <p>
+                              <t> House is destroyed
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                  <source-codes>
+                    <source-code language="Cpp">
+        if (position.y &lt;= 0) {
+            if (position.y == 0)
+                map.setChar(position, ' ');
+            map.removeBullet(this);
+            delete this;
+            return;
+        }
+        map.setChar(position, ' ');
+        char destination = map.getChar(position + Coordinate(-1, 0));
+        position.y -= 1;
+        if (destination == ' ') {
+            map.setChar(position, symbol);
+        } else if (destination == 'V') {
+            map.setChar(position, ' ');                        
+            delete map.removeInvader(position);
+            map.removeBullet(this);
+            delete this;
+        } else if (destination == '#') {
+            map.setChar(position, ' ');                      
+        }
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="09638d5d788e4b7bab2531ffbf69653b" cid="GNR003" type="generalization" creation-date="02/16/2023 15:08:41" from="3f2ab89dca76431f9907fd925f36f0d8" to="9b8da454ace44ac58830f29f85a7a01e" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv7d0382ab34844b6e844db454f0014903" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="2f3bd0f4efd44ffebe5abfb2d9ac0e88" cid="DEP004" type="dependency" creation-date="02/16/2023 15:08:41" from="a8a243f856ab4a859bc3ed866ca18cf8" to="2e7da9ab30c144f5868e909216495302" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv84a9ae7f80b24dea97cf25ffe1480517" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="92f4732967bd4635a4e7e51df20d7258" cid="REL002" type="relationship" creation-date="02/16/2023 15:08:41" from="2e7da9ab30c144f5868e909216495302" to="2e7da9ab30c144f5868e909216495302" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv958ce265399c4cb4b17a85f7b998789d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="2e7da9ab30c144f5868e909216495302" to="2e7da9ab30c144f5868e909216495302" derived="false">
+                <start-role id="umlar-ac03c64c-7188-4ad2-999c-d5c6d8cb641a" name="" navigability="" association-type="aggregation" visibility="private" />
+                <end-role id="umlar-6a2d3639-9261-46a9-a55c-6b832fefbb1a" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="81aaf20e6e6545019789da7b358c3a6f" cid="REL003" type="relationship" creation-date="02/16/2023 15:08:41" from="406168f848ff448aaa12f81f29008cab" to="3f2ab89dca76431f9907fd925f36f0d8" visibility="package">
+              <tagged-values>
+                <tagged-value id="tvfabb560938954538b68df32b7d219904" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="406168f848ff448aaa12f81f29008cab" to="3f2ab89dca76431f9907fd925f36f0d8" derived="false">
+                <start-role id="umlar-9c01f160-a5d6-45a9-9a58-18d6ac66d933" name="" navigability="" association-type="aggregation" visibility="private" />
+                <end-role id="umlar-c900809c-3b94-4595-a8c2-1bd4e8aa8d80" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="f76bc1beb46b46c3890fabfeac58a402" cid="PROP006" type="property" name="invaders" owner="406168f848ff448aaa12f81f29008cab" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvb44a7479a05647178c1197e3e8162841" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="invaders" />
+                <tagged-value id="tv249ba6b2a5d64a5c92f6325c08b8b1c3" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv66c6a54bdc1b4b929745e09685c64905" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tvb5302d89050c4ca49eef7438986b0fe6" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv469fd263bc684f22a85db0b0245713b7" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1180" />
+                <tagged-value id="tv4ecce3e4590d42f894cd16ee014a2045" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="31" />
+                <tagged-value id="tva1abe874f00f44859328a21c8463bb4b" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tvefd2c163552748ceb86112a3645ff72f" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="std::vector" type-id="std::vector" />
+            </item>
+            <item id="c3a369c9a3b34f35b327d8f79c42c429" cid="PROP009" type="property" name="position" owner="9b8da454ace44ac58830f29f85a7a01e" creation-date="02/16/2023 15:08:41" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tv7eea73b5305d4558ad3288a1910b7980" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="position" />
+                <tagged-value id="tv10e61ba22b2844e889fc52dfabdb14f0" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tvf808ed7159c14b3f965822bb88064761" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tvdb1ac7c8bd544723b9759f778d979105" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv2d271bc43c354ae5894614d74ebcd633" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="2446" />
+                <tagged-value id="tvb3a1cdce6cfe4859b3e43725582124bd" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="20" />
+                <tagged-value id="tvf55487509edc47349e26aa24df50a844" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv97cf93b1804e4bfba15da13fded2f870" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <structural-feature type="Coordinate" type-id="Class:2e7da9ab30c144f5868e909216495302" />
+            </item>
+            <item id="406168f848ff448aaa12f81f29008cab" cid="C002" type="class" name="Map" creation-date="02/16/2023 15:08:41" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv724ba6a32860426ca2cb692859f2dd3b" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvd2ef64fd8d0447a48f24c889072c53f3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Map" />
+                <tagged-value id="tvb7e6a26657fb4f07ab6d1d5751e9138d" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv25e54207d7684b878b2152bbe1f64cb7" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tve056a5494fdb4d089d241ba95963e004" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv409914630fb048b69ae6779d73f65c3c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1109" />
+                <tagged-value id="tvcb200ccaca714d1889c6bcbb885397e0" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1298" />
+                <tagged-value id="tv7e3353fd6fb44981b6d7cb468a38596a" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv8713704fbfb6490d9582d1141b41263f" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a2a29564621ef4003848137ef7e08eb36508" cid="PROP003" name="width" creation-date="02/16/2023 15:08:41" property-ref="cf49a4a6bb3f4d0dac09b66c3f78420f" />
+                <attribute id="a02eabf8566484b77a1c2bb647c85d20c508" cid="PROP004" name="height" creation-date="02/16/2023 15:08:41" property-ref="40e87b8f9f92411abb8e2f3b5c9fecf1" />
+                <attribute id="a1f94dd27552e47c6b742ec4969f7d6a1508" cid="PROP005" name="player" creation-date="02/16/2023 15:08:41" property-ref="d7e15aa8b84a437f827f24a63f97e5b5" />
+                <attribute id="a91eba17013c04cc899fb5a0a6cbc73e5508" cid="PROP006" name="invaders" creation-date="02/16/2023 15:08:41" property-ref="f76bc1beb46b46c3890fabfeac58a402" />
+                <attribute id="a2f616a57985d433d99a18d70cb2f6b9b508" cid="PROP007" name="bullets" creation-date="02/16/2023 15:08:41" property-ref="9c4bc158dbef4a4483bb9221d3dc2fe6" />
+                <attribute id="afd9c161304b94bb3bd5b8afc24998594508" cid="PROP008" name="map" creation-date="02/16/2023 15:08:41" property-ref="9929ba0a295d49e3b20fca76ae374f2d" />
+              </attributes>
+              <operations>
+                <operation id="o0a9e8e2da9a24c53a93e1e3b58f53a6e508" cid="OP010" name="Map" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p4e68ce6e7d314e82aec1674a6faf66c2" name="other" type="Map" type-id="Map" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvc9a57043a4fa4f49a9f3e670318a9183" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Map" />
+                    <tagged-value id="tve6f08093dd9845bc8867b98b55a45ff4" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv46940e9306404f78aa8901a46739a724" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv1ff422c04dd942f0900edf3fb35e19c8" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1385" />
+                    <tagged-value id="tvf506aee8d6834bd0a475c4441f1019e2" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="89" />
+                  </tagged-values>
+                </operation>
+                <operation id="o7c8a3f7c833e460fa85a1de1f27b97d1508" cid="OP011" name="Map" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pd9fe7109e10a444ca88314e2bbb54e02" name="width_" type="int" type-id="Cpp.int" />
+                    <parameter id="pf64c62c1d3084ef39badaca141393814" name="height_" type="int" type-id="Cpp.int" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv193370b066cf4a10bb68035eb8f1881f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Map" />
+                    <tagged-value id="tv83af31af62ae41d980601af74a639d8e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv684fddb1318748c78a0e8a732fef9548" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvbcca0d4d46bb4a31b4fd1447a5cbb936" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1480" />
+                    <tagged-value id="tv80638742a6414891b025d5b43ab34ce1" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="139" />
+                  </tagged-values>
+                </operation>
+                <operation id="of4e34ded95c246f68a52668e59f6f948508" cid="OP012" name="Map" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv1fd9e48d9f6940abbcd6924072a9dd27" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Map" />
+                    <tagged-value id="tv69ac5b9a787545b5911ea820191cb6fe" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv8d5eb7d9866c4ceeba07c2a1eb56e09c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvd5b4dec4cf6e4aee87123331b865cddb" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1625" />
+                    <tagged-value id="tva6d7fedf0e794b5d8c096ceecb9e077c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="7" />
+                  </tagged-values>
+                </operation>
+                <operation id="of136444b4ae04e57a8b6d34ddde0e798561" cid="OP058" name="getPlayer" creation-date="02/16/2023 15:08:41" type="Player" type-id="Class:3f2ab89dca76431f9907fd925f36f0d8" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv4273b1332fa34dbb8b641ed34451aba5" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getPlayer" />
+                    <tagged-value id="tv9076faf6c4d749ab80f47764120f8654" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvb5687e1e10d94bfbb92f29fbf0eeddd5" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvf839ba94fd9a4f9a911ba98bd658f29e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5039" />
+                    <tagged-value id="tv6ca593642c2940cb9e0debca60ebdab9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="55" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    return player;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o10072bc8733c4852bbaff79ffe9ce300561" cid="OP059" name="setPlayer" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p24b6b3cdeab24592b90d59b2c3e46c2c" name="player_" type="Player" type-id="Player" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv508f46aef7184149a38676b9c0b1e41d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setPlayer" />
+                    <tagged-value id="tvbf5290f3e8714c21a45c4e5d00ac3f00" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv75e458a315b245d5be4c8c2c828ecb32" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv32720ace72274861b51dff8288c3f149" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5096" />
+                    <tagged-value id="tv3972680231f3417e98f10273b722902c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="64" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    player = player_;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o5f8c4d1089f743c69bd07fa91ca18f77567" cid="OP060" name="addInvader" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p1788820ad1a147a6b1042f8f492e704d" name="position" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvcd2bc3df7e9049ebb03dec766c695027" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="addInvader" />
+                    <tagged-value id="tvc76e62b923e74374bb196cacf2d7a590" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv90c6b0de76374427a6b93dc18382a03f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv484d43af7d284e65bb184fc8fd6c7094" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5162" />
+                    <tagged-value id="tv83e268489dbd43ff83056b8d310e53b3" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="141" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    invaders.push_back(new Invader(position));
+    map[position.y][position.x] = 'V';
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="od969651a943e4cfabdb8af9a470e1773567" cid="OP061" name="addInvader" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pd7e926ee09eb4f71ac335b51cd8908ff" name="invader" type="Invader" type-id="Invader" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tva64700eaf4f14e2da404bd3e5a57ce9e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="addInvader" />
+                    <tagged-value id="tva72941a91d9b45a0b551c75ce62a2102" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvb25ad508c92d4f83a048d767e2878d93" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tved14bfe84b904994a7b7d1d2d719629c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5305" />
+                    <tagged-value id="tv5c8a1bae83f6452382bd0bc98f4c92cd" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="162" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    invaders.push_back(invader);
+    map[invader-&gt;getPosition().y][invader-&gt;getPosition().x] = invader-&gt;getSymbol();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="od42181c58151454daaadff33e4c2d4e9567" cid="OP062" name="addBullet" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p94b4a1f3c37c41acaf1d31f890e3090e" name="position" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvde7a4604cf794cdda6773341f8658ae3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="addBullet" />
+                    <tagged-value id="tv53f72ec6ea9542a1a2ab6c49e3e15a3a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvdd9094379a5b4790a8d66cb2d508ba58" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvc92e50fabd8844dcbc57adc7f0b1fbe8" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5469" />
+                    <tagged-value id="tva1b9ba9abdef4084b9f14f006e0ffddb" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="138" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    bullets.push_back(new Bullet(position));
+    map[position.y][position.x] = '^';
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ob803a59bb1ed4ab795a9a57262357e69567" cid="OP063" name="addBullet" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p381de319f1a64119bfb0f05f68fde538" name="bullet" type="Bullet" type-id="Bullet" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv9c1440bbb0df40bb8ac94d983120d636" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="addBullet" />
+                    <tagged-value id="tv4611b4cb99f84d10b0579244f274ba84" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv7417cc5f2bf146f9bce417d04b6168eb" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv703aa075ad73408db01df3bee458b1c8" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5609" />
+                    <tagged-value id="tv19f5a571d8c34cbaa60064ea19ba3457" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="154" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    bullets.push_back(bullet);
+    map[bullet-&gt;getPosition().y][bullet-&gt;getPosition().x] = bullet-&gt;getSymbol();
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o7ec78048989f48e2a6b1151a750b490c567" cid="OP064" name="addPlayer" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p6e74f279947a4b5abe4531e7d9cc6c48" name="position" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvfc1ea4da50144025852498ca6e59c876" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="addPlayer" />
+                    <tagged-value id="tv3b45007dc63c42ee9c2670b47cb5cfeb" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvc8ee97b6809b4890a5fe7d287e90e8bf" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvf9b3a0968dd544dfac7ad4fc159901fc" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5765" />
+                    <tagged-value id="tv7650c60b47514529b6c96c1f5d377d7e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="88" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    player = new Player(position);
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o022452e0578b46eab430d20d68384675567" cid="OP065" name="addPlayer" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p219a8ec7973b47cba9f3935559f6febb" name="player_" type="Player" type-id="Player" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvc205e9ba4f54472fb0d2c114cae249c4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="addPlayer" />
+                    <tagged-value id="tv2d648f00d20347a7897306cf07f4a290" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvf34a1c51720647f89fb9baaabde0fce6" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tva1cf8d7f67804575ad42b2c4dbff1ddc" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5855" />
+                    <tagged-value id="tv7299a14afa6b4186a58b9efa704a658e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="64" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    player = player_;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o64d04416c2e34339bf9e24208e9aab3e567" cid="OP066" name="removeInvader" creation-date="02/16/2023 15:08:41" type="Invader" type-id="Class:48468b35ab8645ccab6f0acf60942398" visibility="public">
+                  <parameters>
+                    <parameter id="p56b1368b15e945f3848320a46c3833e1" name="position" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv05727f92811b4762bce90489fc94b8d9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="removeInvader" />
+                    <tagged-value id="tv65758cbe123e45418dae75a1efb68365" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvfc79615c3fd446b484c97eaaca81bd8a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv73d75895d09d4fb89269735500ca50f7" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="5921" />
+                    <tagged-value id="tv7631419d5acf468d939ad5cb233b0ffb" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="370" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Invader* invader = nullptr;
+    for (auto it = invaders.begin(); it != invaders.end(); ++it) {
+        if ((*it)-&gt;getPosition() == position) {
+            invader = *it;
+            invaders.erase(it);
+            break;
+        }
+    }
+    map[position.y][position.x] = ' ';
+    return invader;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o5f8a1481644d40c9b3b40f5c0f2fbf00567" cid="OP067" name="removeInvader" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p89721f11432840f4afafa3c1b31637c6" name="invader" type="Invader" type-id="Invader" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvd72b41fa6a5d49feb80931ce944f2254" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="removeInvader" />
+                    <tagged-value id="tv2b58226fc255422abc08af805bcd0a62" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvad05f70b7d4d46b6a6d03a8721d71693" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvfcb6a3ab692f4235940f342369cf2010" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="6293" />
+                    <tagged-value id="tv1348791deed34aa4b9736b305d530b5e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="189" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    invaders.erase(std::find(invaders.begin(), invaders.end(), invader));
+    map[invader-&gt;getPosition().y][invader-&gt;getPosition().x] = ' ';
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o364ef9e64baa4cca8055ef5b1012b56e567" cid="OP068" name="removeBullet" creation-date="02/16/2023 15:08:41" type="Bullet" type-id="Class:a8a243f856ab4a859bc3ed866ca18cf8" visibility="public">
+                  <parameters>
+                    <parameter id="pc43416ac33b84af4bbc2544ce61f2272" name="position" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvf80914bdff9f4e1c84d9157c68bb7546" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="removeBullet" />
+                    <tagged-value id="tv08aad3988c4b4e9b9b5ec9462be28363" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv5e531e49956e411aa88a0ee138edc62c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv50cbb2b7eb884722962f0aa99b8e513a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="6484" />
+                    <tagged-value id="tvb0a781c939894a7aa27bff2c62ff41c5" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="361" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    Bullet* bullet = nullptr;
+    for (auto it = bullets.begin(); it != bullets.end(); ++it) {
+        if ((*it)-&gt;getPosition() == position) {
+            bullet = *it;
+            bullets.erase(it);
+            break;
+        }
+    }
+    map[position.y][position.x] = ' ';
+    return bullet;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o9540e6fbf675458192ebfb86b151e1c2567" cid="OP069" name="removeBullet" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p4e9af74e19844353acc67159318b3cb3" name="bullet" type="Bullet" type-id="Bullet" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv5d00acbb620c4038b82e8ce55e7f6f09" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="removeBullet" />
+                    <tagged-value id="tv77260f25698245e38e9654ce212902db" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv4c4316106d3c41e2bee751d91f9f0b3d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvbbe1264bb88e418fa054f0c444227f4a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="6847" />
+                    <tagged-value id="tva13b28cc23e24eee8f41b1567f9afe2b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="180" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    bullets.erase(std::find(bullets.begin(), bullets.end(), bullet));
+    map[bullet-&gt;getPosition().y][bullet-&gt;getPosition().x] = ' ';
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oc1b2456ef6fb47ee941e5463f68f4bd7567" cid="OP070" name="setLine" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p326b6504efd2432e8740fa1589e51691" name="position" type="Coordinate" type-id="Coordinate" />
+                    <parameter id="p4e1fb9fdf78047c197ae2dc9a7349563" name="line" type="std::vector" type-id="std::vector" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv0a64f5c8f35647edb9220269a7d5422c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setLine" />
+                    <tagged-value id="tvd0b8b34a3fe548bdbb15e0fc21cbcd1e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv099ea133a87e4ab3a6aacb7d1560e0cc" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvb5332f4da2434ae0b12e442c640c2245" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="7029" />
+                    <tagged-value id="tv6533fa917cf74ffd99d0e871214797dd" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="176" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    for (int i = 0; i &lt; line.size(); ++i)
+        map[position.y][position.x + i] = line[i];
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o9879c33841c844a49c10051897e64ad0567" cid="OP071" name="setLine" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p6c883274dea043f7b7a7cc722b67d613" name="position" type="Coordinate" type-id="Coordinate" />
+                    <parameter id="pc20833c66ef14bbfa9b1829c8cefd816" name="line" type="std::string" type-id="std::string" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv802bed7209d740d088de2cd9c08173ac" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setLine" />
+                    <tagged-value id="tv0afaf651d8d44fd19ba74d3485c59d44" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv5e0123f24937492eb9dd8384fdb87774" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv9491a66f70d04c4aa7e4945b0509cc7f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="7207" />
+                    <tagged-value id="tv9b3f286769b4495cb7b65bda72b2c4cd" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="170" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    for (int i = 0; i &lt; line.size(); ++i)
+        map[position.y][position.x + i] = line[i];
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oe462942c402447deb1844a835ca7b735567" cid="OP072" name="setChar" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p25eb60efe4e64dfda48e872dc96e3356" name="position" type="Coordinate" type-id="Coordinate" />
+                    <parameter id="pef02cbc7a5d84df3b3563a110cfc076e" name="c" type="char" type-id="Cpp.char" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvbd21c7393d204ba0acb47caa98241ecb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setChar" />
+                    <tagged-value id="tv2b0307dd0077415abb88f942be502c0d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv481514beb776452f8f14294fd350364c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvc4987e2004c84717a06247065f294861" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="7379" />
+                    <tagged-value id="tv03230e4092c84123b372091aa7f72bd5" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="96" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    map[position.y][position.x] = c;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="odf48437f5963464985fc62e6dd9476b3567" cid="OP073" name="setChar" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p09fc5f100b0c4ca080c41683daab6b14" name="y" type="int" type-id="Cpp.int" />
+                    <parameter id="padd410bcfe244defa3b1718faf9477c2" name="x" type="int" type-id="Cpp.int" />
+                    <parameter id="p51fcf81813ce479f8048d00633ba555e" name="c" type="char" type-id="Cpp.char" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvae22f7bf0df44a69b44df58496dfafc3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setChar" />
+                    <tagged-value id="tv3e66408f20474724851a5fea248c5ccf" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv1af4aaf65acd4088badd1062c487e39c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv0eb4a287e0414df097067b1473e648e2" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="7477" />
+                    <tagged-value id="tv817bccb99cd94f14b5fec102c1982e6f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="64" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    map[y][x] = c;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oa3ba9ebfd1d54235ae666102b6e7fc47567" cid="OP074" name="getChar" creation-date="02/16/2023 15:08:41" type="char" type-id="Cpp.char" visibility="public">
+                  <parameters>
+                    <parameter id="pde8c0d0d14bd4a31a544d59024b281fb" name="position" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvbac5d38e4f8c460fa1e4455526771f7d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getChar" />
+                    <tagged-value id="tv9a33d2dbe3be40cfbbb4586ff604e3e3" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvffa9bb0c6a7345468673e9aa143ca310" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv09f86655f2904314bee18b290f62936b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="7543" />
+                    <tagged-value id="tv4c044c816d954a5b979fc6edababfc61" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="97" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    return map[position.y][position.x];
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o50dfc5e022e846e8ae83a920326ccfdd567" cid="OP075" name="print" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tvb06a43c33e894bcf9d4f0cc3b052f96a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="print" />
+                    <tagged-value id="tvf837ca444dc3458393df223bb6896c1d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv6d7235c7ab334afb84a4053742376a5a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv5a3d45ba98784811931674a96ca23c96" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="7642" />
+                    <tagged-value id="tv287ecb346e844ef1be847a57ec35b6da" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="467" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+    std::cout &lt;&lt; "\x1b[2J\x1b[3J\x1b[H";
+    for (int i = 0; i &lt; width + 2; ++i)
+        std::cout &lt;&lt; '@';
+    std::cout &lt;&lt; '\n';
+    for (int i = 0; i &lt; height; i++) {
+        std::cout &lt;&lt; '@';
+        for (int j = 0; j &lt; width; j++)
+            std::cout &lt;&lt; map[i][j];
+        std::cout &lt;&lt; '@';
+        std::cout &lt;&lt; '\n';
+    }
+    for (int i = 0; i &lt; width + 2; ++i)
+        std::cout &lt;&lt; '@';
+    std::cout &lt;&lt; std::flush;
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ocec073fd319c47ae91c3048949b9be19567" cid="OP077" name="moveBullets" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv0542c8cdd78b4c1c9fa065b120798695" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="moveBullets" />
+                    <tagged-value id="tv0e287179c621429abd895a285c23d3d6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvaea01bb600114df0b421f4a8f0259115" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tve5d57276077246a4a095fb2f0cb36c90" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="9278" />
+                    <tagged-value id="tv761d8fdaaea5400cb6044bc634e809df" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="128" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">                       
+    for (Bullet* bullet : bullets) {
+        bullet-&gt;moveUp(*this);
+    }
+</source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o4ea1fba7e473402e97845e159060a1f5567" cid="OP078" name="moveInvaders" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv00a59f20152f48d9b997264e1715b855" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="moveInvaders" />
+                    <tagged-value id="tva9b7487e7ece44a19bfc50db440d7490" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvad53f3cc8cc64424a0b44f8e13260ea0" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tve09df8f709cf48c3bdea762ad47bc36a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="9408" />
+                    <tagged-value id="tv0785831dd54642f090fdfe77377b9ee0" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="219" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">                          
+    for (Invader* invader : invaders) {
+        if (invader-&gt;moveDown(*this)) {
+            std::cout &lt;&lt; "Game over!\n";
+            exit(0);
+        }
+    }
+</source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="2e7da9ab30c144f5868e909216495302" cid="C001" type="class" name="Coordinate" creation-date="02/16/2023 15:08:41" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv41f21cd5d9e94793a097ecb557edf885" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvb3ab0197bd864639a51283bff58af0f6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Coordinate" />
+                <tagged-value id="tva75224c7170c46b9af74c05ee757c8a8" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p90bef3a9a11d4e8a99e6f5fd4f5fbba7_348886129" />
+                <tagged-value id="tv9a65aeb8c0194cbf93effd19a3f1f7c0" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                <tagged-value id="tv71142753061e450ebc2619ad52c5c9b7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvf2770e91e6b54afe8d4ad78d7f7ff04d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="229" />
+                <tagged-value id="tv723fb6ddfa8342bfbfa6476350bcabc0" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="775" />
+                <tagged-value id="tv0d8c85495fa64a6b8dfb1dacb5726e49" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="10883" />
+                <tagged-value id="tv29156f525dd14e23807e1e6c13e49946" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="02/15/2023 19:51:58" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a82df173e9bc34a1fa68ba33e33c23e2e508" cid="PROP001" name="y" creation-date="02/16/2023 15:08:41" property-ref="63bea06b02214b62b08edd2f7e5b674c" />
+                <attribute id="a109f25c582ba44b79574c084f056096f508" cid="PROP002" name="x" creation-date="02/16/2023 15:08:41" property-ref="e33be5cdc2b640aca163085e8f71922e" />
+              </attributes>
+              <operations>
+                <operation id="o1a5dd0031b034f86b53a4ad3b200faa5460" cid="OP001" name="Coordinate" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tve00d8ab981df46768f5fa72464b79e12" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Coordinate" />
+                    <tagged-value id="tvc9a77deabd0f4cc986d2f8e060e2a66e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvf5e927a9820f436eb8d176fd3e1a84d4" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv9354475d0d6c4f11bfa0d4c67325836e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="262" />
+                    <tagged-value id="tv9ba83b342ebf4576a21459fd194f0422" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="28" />
+                  </tagged-values>
+                </operation>
+                <operation id="o7c7fc3c2628f4375820b31c8d1a1b426476" cid="OP002" name="Coordinate" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p4edcccb95aac406da3f56ad96237fa38" name="y" type="int" type-id="Cpp.int" />
+                    <parameter id="p64d0669bfcf748028f0e35413f4b0661" name="x" type="int" type-id="Cpp.int" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv6666acbe270940a2b718a1f32e4b0c9e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Coordinate" />
+                    <tagged-value id="tvfb2171bb867e40569fe497ee8001c392" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv5db71d57347148c9bae05134504f220e" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7d3f830776c04a90b2fec5b14d2d2873" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="296" />
+                    <tagged-value id="tvc9e468e8ad2a42b4807b4c12913bad36" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="40" />
+                  </tagged-values>
+                </operation>
+                <operation id="o6b921ed14e73464d9f4de78c29c4d067492" cid="OP003" name="Coordinate" creation-date="02/16/2023 15:08:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pb760a8bf20fe494f809c8a70c73eedd7" name="other" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv8462e9a2fe5846999316697b845642b8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Coordinate" />
+                    <tagged-value id="tv8b9ed632b18c44a29516b5c14b08042b" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv187b8c7d82c4415582cd71a1317c44dc" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv5d10ee095b8641f28323f8c17876c216" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="342" />
+                    <tagged-value id="tv2850225038e144cba604dbab39823e30" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="63" />
+                  </tagged-values>
+                </operation>
+                <operation id="o31c63695a31744838814954e85fbe349492" cid="OP004" name="=" creation-date="02/16/2023 15:08:41" type="Coordinate" type-id="Class:2e7da9ab30c144f5868e909216495302" visibility="public">
+                  <parameters>
+                    <parameter id="p3471128cf02e4250a071d374c83152ab" name="other" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv0818bc6ac75b49a9b771c3e4c075b11d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="=" />
+                    <tagged-value id="tv87d35504807f4711aa198643fd4eb8c9" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv5f06a3a1cc914d47847d0a86e521fe14" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7235d947b3d64b7ea956cb0d7cd38764" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="411" />
+                    <tagged-value id="tva71a42a1c76a478390d1a198eff4a6d1" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="122" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        x = other.x;
+        y = other.y;
+        return *this;
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ob67523b07e6e4333a7784717a6d94ed9500" cid="OP005" name="==" creation-date="02/16/2023 15:08:41" type="bool" type-id="Cpp.bool" visibility="public">
+                  <parameters>
+                    <parameter id="p01480e14aeac4fcd9ee05280936ae7ac" name="other" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvbfba94a39b1248d9b2437d20b31ba6cc" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="==" />
+                    <tagged-value id="tvd23c6a37b7d34f48bd86339582215a6f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tvb78f9d9720454afb9b9780a357540b58" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7a81601791ea40248eb832e010923bf9" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="539" />
+                    <tagged-value id="tv72b6699ddcda4ff0b86d1b23738e91bc" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="101" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        return x == other.x &amp;&amp; y == other.y;
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="obfdd6ca1b4b64f3a8123449738d86bd8500" cid="OP006" name="!=" creation-date="02/16/2023 15:08:41" type="bool" type-id="Cpp.bool" visibility="public">
+                  <parameters>
+                    <parameter id="p6999e73282794f04a08423ed820572b8" name="other" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvcfc6e1ae361e481084c6f5c25f1dda07" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="!=" />
+                    <tagged-value id="tvb52ef7ef7b8d4dd99a4571ebdf8eeecf" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tva384d6436b5a4a02b87557a716406757" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv45dbd34422684abb8e7a50ba4cacbca9" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="646" />
+                    <tagged-value id="tve440bf6e701440ba96505eec1652edd7" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="90" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        return !(*this == other);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="of8dcf79d9d1c45ffb97e41b7c5baebc9500" cid="OP007" name="+" creation-date="02/16/2023 15:08:41" type="Coordinate" type-id="Class:2e7da9ab30c144f5868e909216495302" visibility="public">
+                  <parameters>
+                    <parameter id="p8b656a0602cd45be9a6fbe6949c4efd6" name="other" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv2070b684825045e2a3b533ed70624d91" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="+" />
+                    <tagged-value id="tvb2c8731756f24ea0be8acb80324418bb" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv88786f99b5854c9bb47ef094d07f11dd" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv11a94746bcf64d0e8e92eaa0c0638f4f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="742" />
+                    <tagged-value id="tvc9320f4e95444f89a1f3101c9d2ff49f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="114" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        return Coordinate(y + other.y, x + other.x);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o88dffda9ff4449e5b758a258069807df500" cid="OP008" name="-" creation-date="02/16/2023 15:08:41" type="Coordinate" type-id="Class:2e7da9ab30c144f5868e909216495302" visibility="public">
+                  <parameters>
+                    <parameter id="pd15d8025dd31447c92b3d363fdf7c6d4" name="other" type="Coordinate" type-id="Coordinate" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv0d3dcaeefe7d4d13a8ffde3dc0fda878" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="-" />
+                    <tagged-value id="tvc00590bf80164c968448aa061e00140c" name="SourceCodePath" type="text" multiple="false" hidden="true" value="C:\Users\matti\OneDrive\Documenti\GitHub\Invaders\invaders.cpp" />
+                    <tagged-value id="tv1996f49fcc18466e8a825fed53818987" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvf9b1d2eb8c474014a0ba590717c15897" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="862" />
+                    <tagged-value id="tvd9b959cd31c6465ca1b746e185842fee" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="114" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp">
+        return Coordinate(y - other.y, x - other.x);
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="p353dcfb9bfd74010ad1e99158134812b_745879141" name="" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-252,-15" zoom="0.5">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author>Mattia Marchese</author>
+              </authors>
+              <description />
+              <creation-date>02/16/2023 15:08:41</creation-date>
+              <change-date>02/16/2023 15:08:41</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <tagged-values>
+              <tagged-value id="tv9808252dca9a4ec6b27c5546c0031e72" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+            </tagged-values>
+            <abstract-items />
+            <layer id="88f789926e4c4f06bc8eee35eda06b93" name="Default" visible="true" enabled="true" locked="false">
+              <item id="9e5f7eff07a449a28f1e020a811e65a9" iid="dca4be26759d4549b83433ab9b9753c1" creation-date="02/16/2023 15:08:41" order-index="0" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="583" y1="846" x2="1038" y2="881" start-border-pos="0.583612040133779" end-border-pos="0.150398406374502" start-local-pos="199" end-local-pos="151" name-position="0,20">
+                  <points>
+                    <point x="583" y="846" />
+                    <point x="575.5" y="900.5" />
+                    <point x="1038" y="881" />
+                  </points>
+                </layout>
+                <relation from="406168f848ff448aaa12f81f29008cab" from-iid="cc9b7857523345baadae47a09f78a750" to="a8a243f856ab4a859bc3ed866ca18cf8" to-iid="d3b9034eb90e4fd6b7c7434ad17ecbe0" />
+              </item>
+              <item id="92f4732967bd4635a4e7e51df20d7258" iid="c4a47b6156ab412d9faa0cf662c9ac74" creation-date="02/16/2023 15:08:41" order-index="1" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="101" y1="357" x2="61" y2="397" start-border-pos="0.0341296941041946" end-border-pos="0.956709951162338" start-local-pos="154" end-local-pos="115" name-position="0,20">
+                  <points>
+                    <point x="101" y="357" />
+                    <point x="101" y="307" />
+                    <point x="11" y="307" />
+                    <point x="11" y="397" />
+                    <point x="61" y="397" />
+                  </points>
+                </layout>
+                <relation from="2e7da9ab30c144f5868e909216495302" from-iid="2be458eb7ab74f45a3322f03d08155ce" to="2e7da9ab30c144f5868e909216495302" to-iid="2be458eb7ab74f45a3322f03d08155ce" />
+              </item>
+              <item id="9970a008d1f946609daed3f786f34a42" iid="286db11e38d046c3968eec85c0a34d2c" creation-date="02/16/2023 15:08:41" order-index="2" type="relation">
+                <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="987" y1="881" x2="484" y2="846" start-border-pos="0.099601593625498" end-border-pos="0.666387959866221" start-local-pos="100" end-local-pos="100" name-position="0,20">
+                  <points>
+                    <point x="987" y="881" />
+                    <point x="500.5" y="900.5" />
+                    <point x="484" y="846" />
+                  </points>
+                </layout>
+                <relation from="a8a243f856ab4a859bc3ed866ca18cf8" from-iid="d3b9034eb90e4fd6b7c7434ad17ecbe0" to="406168f848ff448aaa12f81f29008cab" to-iid="cc9b7857523345baadae47a09f78a750" />
+              </item>
+              <item id="68543a808528435094af1d8f9730deb7" iid="12acc42a0b7e4fe9907d2283702582c4" creation-date="02/16/2023 15:08:41" order-index="3" type="entity">
+                <layout ax="828" ay="30.5" awidth="87" aheight="77" x="828" y="30.5" width="87" height="77" />
+                <classifier />
+                <class />
+              </item>
+              <item id="2e7da9ab30c144f5868e909216495302" iid="2be458eb7ab74f45a3322f03d08155ce" creation-date="02/16/2023 15:08:41" order-index="4" type="entity">
+                <layout ax="61" ay="357" awidth="293" aheight="231" x="61" y="357" width="293" height="231" />
+                <classifier />
+                <class />
+              </item>
+              <item id="406168f848ff448aaa12f81f29008cab" iid="cc9b7857523345baadae47a09f78a750" creation-date="02/16/2023 15:08:41" order-index="5" type="entity">
+                <layout ax="384" ay="254" awidth="299" aheight="592" x="384" y="254" width="299" height="592" />
+                <classifier />
+                <class />
+              </item>
+              <item id="031c5affb0c04b78bee45766701681f4" iid="77df007af1474f4bacc8e18706a8417c" creation-date="02/16/2023 15:08:41" order-index="6" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="542" y1="163" x2="201" y2="357" start-border-pos="0.625" end-border-pos="0.119825938566553" name-position="0,20">
+                  <points>
+                    <point x="542" y="163" />
+                    <point x="202" y="172" />
+                    <point x="201" y="357" />
+                  </points>
+                </layout>
+                <relation from="3f2ab89dca76431f9907fd925f36f0d8" from-iid="52a6c92131684b34b2ea4621986de2ac" to="2e7da9ab30c144f5868e909216495302" to-iid="2be458eb7ab74f45a3322f03d08155ce" />
+              </item>
+              <item id="9b8da454ace44ac58830f29f85a7a01e" iid="bd2bddaae06644f3b830a021a32b103a" creation-date="02/16/2023 15:08:41" order-index="7" type="entity">
+                <layout ax="766" ay="160" awidth="331" aheight="249" x="766" y="160" width="331" height="249" />
+                <classifier />
+                <class />
+              </item>
+              <item id="6e62c825667041b78e7b3c48835607f9" iid="8b659aa6ad634879a498b6823c381ae0" creation-date="02/16/2023 15:08:41" order-index="8" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="792" y1="532" x2="683" y2="650" start-border-pos="0.930897435897436" end-border-pos="0.417402027027027" name-position="0,20">
+                  <points>
+                    <point x="792" y="532" />
+                    <point x="702" y="532" />
+                    <point x="702" y="652" />
+                    <point x="683" y="650" />
+                  </points>
+                </layout>
+                <relation from="48468b35ab8645ccab6f0acf60942398" from-iid="7dec77873b084a8588522203d70beed9" to="406168f848ff448aaa12f81f29008cab" to-iid="cc9b7857523345baadae47a09f78a750" />
+              </item>
+              <item id="f947fd46953f465f93a01246e8d5d3c6" iid="1d535651bacf4489a3ae1b0fe2722f69" creation-date="02/16/2023 15:08:41" order-index="9" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="927" y1="500" x2="928" y2="409" start-border-pos="0.128776717557252" end-border-pos="0.627509063444109" name-position="0,20">
+                  <points>
+                    <point x="927" y="500" />
+                    <point x="927.5" y="454.5" />
+                    <point x="928" y="409" />
+                  </points>
+                </layout>
+                <relation from="48468b35ab8645ccab6f0acf60942398" from-iid="7dec77873b084a8588522203d70beed9" to="9b8da454ace44ac58830f29f85a7a01e" to-iid="bd2bddaae06644f3b830a021a32b103a" />
+              </item>
+              <item id="48468b35ab8645ccab6f0acf60942398" iid="7dec77873b084a8588522203d70beed9" creation-date="02/16/2023 15:08:41" order-index="10" type="entity">
+                <layout ax="792" ay="500" awidth="262" aheight="117" x="792" y="500" width="262" height="117" />
+                <classifier />
+                <class />
+              </item>
+              <item id="debdb196d13e4646af0007357fed6cb6" iid="787c0478005a4356977d8c19ea9b26e8" creation-date="02/16/2023 15:08:41" order-index="11" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="792" y1="592" x2="302" y2="588" start-border-pos="0.803205128205128" end-border-pos="0.544191126279863" name-position="0,20">
+                  <points>
+                    <point x="792" y="592" />
+                    <point x="702" y="592" />
+                    <point x="702" y="872" />
+                    <point x="302" y="872" />
+                    <point x="302" y="588" />
+                  </points>
+                </layout>
+                <relation from="48468b35ab8645ccab6f0acf60942398" from-iid="7dec77873b084a8588522203d70beed9" to="2e7da9ab30c144f5868e909216495302" to-iid="2be458eb7ab74f45a3322f03d08155ce" />
+              </item>
+              <item id="a8a243f856ab4a859bc3ed866ca18cf8" iid="d3b9034eb90e4fd6b7c7434ad17ecbe0" creation-date="02/16/2023 15:08:41" order-index="12" type="entity">
+                <layout ax="887" ay="764" awidth="251" aheight="117" x="887" y="764" width="251" height="117" />
+                <classifier />
+                <class />
+              </item>
+              <item id="d4edd133c2004d7282abbab16855ad87" iid="ac23c366f73e4768bb915decd1b92dbe" creation-date="02/16/2023 15:08:41" order-index="13" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-to-fields="false" auto-path="" x1="683" y1="558" x2="792" y2="558" start-border-pos="0.378589525818825" end-border-pos="0.875" name-position="0,20">
+                  <points>
+                    <point x="683" y="558" />
+                    <point x="792" y="558" />
+                  </points>
+                </layout>
+                <relation from="406168f848ff448aaa12f81f29008cab" from-iid="cc9b7857523345baadae47a09f78a750" to="48468b35ab8645ccab6f0acf60942398" to-iid="7dec77873b084a8588522203d70beed9" />
+              </item>
+              <item id="9ce3e80a54474891bca275f93ffea70b" iid="28eb81846ac043b2b7c5e0ea2325c325" creation-date="02/16/2023 15:08:41" order-index="14" type="relation">
+                <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="514" y1="163" x2="484" y2="254" start-border-pos="0.652929133858268" end-border-pos="0.0836120401337793" end-local-pos="100" name-position="0,20">
+                  <points>
+                    <point x="514" y="163" />
+                    <point x="513" y="208.5" />
+                    <point x="484" y="254" />
+                  </points>
+                </layout>
+                <relation from="3f2ab89dca76431f9907fd925f36f0d8" from-iid="52a6c92131684b34b2ea4621986de2ac" to="406168f848ff448aaa12f81f29008cab" to-iid="cc9b7857523345baadae47a09f78a750" />
+              </item>
+              <item id="3f2ab89dca76431f9907fd925f36f0d8" iid="52a6c92131684b34b2ea4621986de2ac" creation-date="02/16/2023 15:08:41" order-index="15" type="entity">
+                <layout ax="415" ay="8" awidth="254" aheight="155" x="415" y="8" width="254" height="155" />
+                <classifier />
+                <class />
+              </item>
+              <item id="33610c6af522481b8b70cd4bcdaa10eb" iid="3931b9d489af430bb6dbc1a160981a29" creation-date="02/16/2023 15:08:41" order-index="16" type="relation">
+                <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="384" y1="575" x2="354" y2="511" start-border-pos="0.864615709459459" end-border-pos="0.416666666666667" end-local-pos="154" name-position="0,20">
+                  <points>
+                    <point x="384" y="575" />
+                    <point x="338.5" y="573.5" />
+                    <point x="354" y="511" />
+                  </points>
+                </layout>
+                <relation from="406168f848ff448aaa12f81f29008cab" from-iid="cc9b7857523345baadae47a09f78a750" to="2e7da9ab30c144f5868e909216495302" to-iid="2be458eb7ab74f45a3322f03d08155ce" />
+              </item>
+              <item id="81aaf20e6e6545019789da7b358c3a6f" iid="db417361cc124627b1dabb0dbf7ed84b" creation-date="02/16/2023 15:08:41" order-index="17" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="583" y1="254" x2="606" y2="163" start-border-pos="0.166387959866221" end-border-pos="0.562007874015748" start-local-pos="199" end-local-pos="191" name-position="0,20">
+                  <points>
+                    <point x="583" y="254" />
+                    <point x="594.5" y="208.5" />
+                    <point x="606" y="163" />
+                  </points>
+                </layout>
+                <relation from="406168f848ff448aaa12f81f29008cab" from-iid="cc9b7857523345baadae47a09f78a750" to="3f2ab89dca76431f9907fd925f36f0d8" to-iid="52a6c92131684b34b2ea4621986de2ac" />
+              </item>
+              <item id="0f15d0816d9442759e9da96bc69dab4a" iid="67f7466ec1e34015a8470ce02b3e40c4" creation-date="02/16/2023 15:08:41" order-index="18" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="887" y1="872" x2="943" y2="409" start-border-pos="0.769153846153846" end-border-pos="0.616601208459215" name-position="0,20">
+                  <points>
+                    <point x="887" y="872" />
+                    <point x="622" y="872" />
+                    <point x="702" y="872" />
+                    <point x="702" y="432" />
+                    <point x="942" y="432" />
+                    <point x="943" y="409" />
+                  </points>
+                </layout>
+                <relation from="a8a243f856ab4a859bc3ed866ca18cf8" from-iid="d3b9034eb90e4fd6b7c7434ad17ecbe0" to="9b8da454ace44ac58830f29f85a7a01e" to-iid="bd2bddaae06644f3b830a021a32b103a" />
+              </item>
+              <item id="6a62a25a5d934714aabedd9868c76e72" iid="fdc5e1c5850c416ba44ebcf0344b35c7" creation-date="02/16/2023 15:08:41" order-index="19" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-to-fields="false" auto-path="" x1="883" y1="409" x2="219" y2="357" start-border-pos="0.661737160120846" end-border-pos="0.135122866894198" name-position="0,20">
+                  <points>
+                    <point x="883" y="409" />
+                    <point x="882" y="432" />
+                    <point x="702" y="432" />
+                    <point x="702" y="232" />
+                    <point x="220" y="232" />
+                    <point x="219" y="357" />
+                  </points>
+                </layout>
+                <relation from="9b8da454ace44ac58830f29f85a7a01e" from-iid="bd2bddaae06644f3b830a021a32b103a" to="2e7da9ab30c144f5868e909216495302" to-iid="2be458eb7ab74f45a3322f03d08155ce" />
+              </item>
+              <item id="2f3bd0f4efd44ffebe5abfb2d9ac0e88" iid="1602518b15124626bef880ef763f9a83" creation-date="02/16/2023 15:08:41" order-index="20" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="1012" y1="881" x2="103" y2="588" start-border-pos="0.625" end-border-pos="0.714156996587031" name-position="0,20">
+                  <points>
+                    <point x="1012" y="881" />
+                    <point x="462" y="932" />
+                    <point x="102" y="932" />
+                    <point x="103" y="588" />
+                  </points>
+                </layout>
+                <relation from="a8a243f856ab4a859bc3ed866ca18cf8" from-iid="d3b9034eb90e4fd6b7c7434ad17ecbe0" to="2e7da9ab30c144f5868e909216495302" to-iid="2be458eb7ab74f45a3322f03d08155ce" />
+              </item>
+              <item id="09638d5d788e4b7bab2531ffbf69653b" iid="018ca799e9834e78a7db6759d88e5d54" creation-date="02/16/2023 15:08:41" order-index="21" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="669" y1="86" x2="766" y2="292" start-border-pos="0.375" end-border-pos="0.867" name-position="0,20">
+                  <points>
+                    <point x="669" y="86" />
+                    <point x="742" y="292" />
+                    <point x="766" y="292" />
+                  </points>
+                </layout>
+                <relation from="3f2ab89dca76431f9907fd925f36f0d8" from-iid="52a6c92131684b34b2ea4621986de2ac" to="9b8da454ace44ac58830f29f85a7a01e" to-iid="bd2bddaae06644f3b830a021a32b103a" />
+              </item>
+            </layer>
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-package" id="p5004a8d5b2c04749a1b1dad0a8797265_739412989" name="Packages" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author>Mattia Marchese</author>
+          </authors>
+          <description />
+          <creation-date>02/16/2023 15:08:41</creation-date>
+          <change-date>02/16/2023 15:08:41</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values>
+          <tagged-value id="tv306861d16f2e45a3889eeeb9e68c4d25" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+        </tagged-values>
+        <abstract-items />
+        <layer id="03cbb222fa6241f4a9c2ab4bffae73da" name="Default" visible="true" enabled="true" locked="false">
+          <item id="517b93c692a14cf297c84b5986df1b19" iid="75271cbd61cf405bb104ed2777178d24" creation-date="02/16/2023 15:08:41" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="84" aheight="56" x="0" y="0" width="84" height="56" expanded="0,0,84,56" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-class" id="pf09c6ef51149435bb3673baa5e06e803_493926409" name="ClassDiagram2" order-index="3" overview-order-index="0" uid="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Mattia Marchese</author>
+          </authors>
+          <description />
+          <creation-date>02/16/2023 15:14:08</creation-date>
+          <change-date>02/16/2023 15:14:08</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="b65f23530a9b4c2bba691ca2a0957aae" name="Default" visible="true" enabled="true" locked="false" />
+      </diagram>
+    </model>
+  </models>
+</sim-project>
